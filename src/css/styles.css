@@ -20,7 +20,7 @@ h1, h2, h3 {
 }
 
 h2 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
 }
 
 body {
@@ -39,7 +39,7 @@ img {
     z-index: 1000 !important;
  }
 
-#puzzle2_hero {
+.header {
     height: 100vh !important;
     background-color: #63912a !important;
     background-image: url(/puzzle_bg_soccer.43ace225.png);
@@ -67,6 +67,12 @@ img {
 }
 
 
-#content {
+.content {
+    padding-top: 56px !important;
     height: 100vh !important;
+}
+
+#page-football h2 {
+    max-width: 330px;
+    margin: auto;
 }
