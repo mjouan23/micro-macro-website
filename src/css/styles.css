@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;800&family=Bangers&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    margin-bottom: 0.5em;
+    font-family: Bangers, sans-serif !important;
+    color: rgb(255, 255, 255) !important;
+    text-shadow: rgb(0, 0, 0) 2px 2px 0px !important;
+    -webkit-text-stroke-width: 2px !important;
+    line-height: 1em !important;
+    padding: 6px !important;
+}
+
+h2 {
+    font-size: 3.5rem !important;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+#menu {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+ }
+
+#puzzle2_hero {
+    height: 100vh !important;
+    background-color: #63912a !important;
+    background-image: url(/puzzle_bg_soccer.43ace225.png);
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 10%;
+}
+
+.hg_logo {
+    height: auto !important;
+    width: 80vh !important;
+}
+
+#cases #scroll-down-arrow:before {
+    color: #fff !important;
+    position: absolute !important;
+    top: -12px !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 32px;
+    background-color: #000;
+    width: 230px !important;
+    border-radius: 30px;
+}
+
+
+#content {
+    height: 100vh !important;
+}
