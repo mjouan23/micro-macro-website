@@ -41,8 +41,6 @@ img {
 
 .header {
     height: 100vh !important;
-    background-color: #63912a !important;
-    background-image: url(/puzzle_bg_soccer.43ace225.png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
