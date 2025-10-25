@@ -8,21 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const nav = document.querySelector('nav') || document.querySelector('#menu nav');
         const offset = nav ? nav.offsetHeight : 0;
-        console.log(offset);
         
         const content = document.querySelector('.content');
         if (content) {
             // calcule la position juste après le bas du bloc content
-            const top = content.getBoundingClientRect().top + window.pageYOffset + content.offsetHeight - offset;
+            const top = content.getBoundingClientRect().top - offset;
             window.scrollTo({ top, behavior: 'smooth' });
             return;
-        }
-
-        // fallback : faire comme avant vers #content
-        const target = document.querySelector('.content');
-        if (target) {
-            const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top, behavior: 'smooth' });
         }
     });
 });
