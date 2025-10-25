@@ -46,10 +46,15 @@ img {
     background-repeat: no-repeat;
     margin-bottom: 10%;
 }
+.header img {
+    margin-bottom: 10vh;
+}
 #button_bottom i.fs-1 {
     font-size: 4rem !important;
 }
 .content {
-    padding-top: 56px !important;
     height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
