@@ -15,7 +15,6 @@ h1, h2, h3 {
     color: rgb(255, 255, 255) !important;
     text-shadow: rgb(0, 0, 0) 2px 2px 0px !important;
     -webkit-text-stroke-width: 2px !important;
-    line-height: 1em !important;
     padding: 6px !important;
 }
 
@@ -24,7 +23,7 @@ h2 {
 }
 
 body {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', Condensed;
 }
 
 img {
@@ -37,14 +36,38 @@ img {
     top: 0 !important;
     width: 100% !important;
     z-index: 1000 !important;
- }
+}
+
+.btn-danger, .btn-default {
+    background-image: none;
+    font-family: 'Barlow', Condensed;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff !important;
+    border: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px #111;
+    margin: auto auto 10px;
+    font-size: 1.3em !important;
+    max-width: 550px;
+}
+.btn-danger {
+    margin-top: 20px;
+    background-color: #d20c00;
+    border-color: #d20c00;
+}
+.btn-danger:hover {
+    background-color: #b90b00;
+    border-color: #b90b00;
+    text-decoration: none !important;
+}
 
 .header {
     height: 100vh !important;
     background-position: 50%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 10%;
 }
 .header img {
     margin-bottom: 10vh;
@@ -53,8 +76,51 @@ img {
     font-size: 4rem !important;
 }
 .content {
-    height: 100vh !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-y: auto;
+    height: auto;
+}
+
+/* Containers prenant toute la hauteur de la fenêtre */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Ajustement des rows pour qu'elles prennent tout l'espace disponible */
+.row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajustement du contenu pour qu'il soit bien centré */
+.col-md-8 {
+    width: 100%;
+}
+
+/* Style commun pour les boutons de navigation entre sections */
+.section-nav-button {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    z-index: 100;
+}
+
+.section-nav-button i.bi {
+    font-size: 4rem !important;
+    cursor: pointer;
+}
+
+
+@media (max-width: 767px) {
+    .btn-danger, .btn-default {
+        width: 80% !important;
+    }
 }

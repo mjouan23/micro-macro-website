@@ -1,10 +1,11 @@
+.header {
+    background-color: #63912a !important;
+    /* background-image: url('../images/background_header_football.webp'); */
+}
+
 h2 {
     max-width: 330px;
     margin: auto;
-}
-
-.header {
-    background-color: #63912a !important;
 }
 
 /* Image strip: horizontal scroll + native scroll-snap for smooth, hardware-accelerated snapping */
@@ -19,7 +20,6 @@ h2 {
     touch-action: pan-y;               /* permet le scroll vertical de la page */
     scroll-snap-type: x mandatory;     /* activation du snap natif */
     scroll-behavior: smooth;           /* smooth pour scroll programmatique */
-    padding: 1rem 0;
 }
 
 /* chaque slide est l'unité de snap et occupe la largeur de la fenêtre */
@@ -62,4 +62,55 @@ h2 {
 /* visual pendant le drag (optionnel) */
 .image-strip.is-dragging {
     cursor: grabbing;
+}
+
+/* Styles pour le carousel Leo */
+.carousel {
+    margin: 0.5rem auto;      /* marges réduites */
+    max-width: 760px;
+    overflow: hidden;         /* retirer le scroll */
+    padding: 0 0.5rem;        /* légère marge interne */
+}
+
+/* s'assurer que le inner n'ouvre pas de scrollbar */
+.carousel .carousel-inner {
+    overflow: hidden;
+    margin-bottom: 1rem;     /* espace réduit pour indicateurs */
+}
+
+/* images responsives sans provoquer de débordement */
+.carousel .carousel-item img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* indicateurs : plus petits et plus près du carousel */
+.carousel .carousel-indicators {
+    bottom: -28px;
+}
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    background-color: #666;
+}
+.carousel .carousel-indicators button.active {
+    background-color: #000;
+}
+
+.carousel .carousel-control-prev {
+    margin-left: -20px;
+}
+
+
+.carousel .carousel-control-next {
+    margin-right: -20px;
+}
+
+#bonusEnquetes .row {
+    flex: none;
 }

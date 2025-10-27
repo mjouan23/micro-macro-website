@@ -18,3 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navButtons = document.querySelectorAll('.section-nav-button');
+    
+    navButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const currentContainer = this.closest('.container');
+            const nextContainer = currentContainer.nextElementSibling;
+            if (nextContainer) {
+                nextContainer.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
