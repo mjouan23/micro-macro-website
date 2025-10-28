@@ -75,7 +75,7 @@ a {
 }
 
 .header {
-    height: 100vh !important;
+    height: 100svh !important;
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
