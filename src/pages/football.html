@@ -12,26 +12,26 @@
     <title>Micro Macro Puzzle - Football</title>
 </head>
 <body>
-    <div id="menu"></div>
+    <!-- <div id="menu"></div> -->
     
     <div class="header align-items-center d-flex justify-content-center">
-        <div class="col-md-6 justify-content-center">
+        <div class="col-md-8 offset-md-2 text-center">
             <img src="../images/image_header_football.png" alt="MicroMacro Football Header" class="img-fluid">
+            <p>Installe-toi confortablement, détective de la mi-temps ! Explore le terrain du crime, trouve les scènes cachées et résous l'enquête avant… la fin du rouleau !</p>
         </div>
-        <div id="button_bottom" class="position-absolute bottom-0 w-100 text-center pb-5">
+        <a href="#miniEnquetes" class="section-nav-button position-absolute bottom-0 w-100 text-center pb-5">
             <i class="bi bi-arrow-down-circle-fill text-white fs-1"></i>
-        </div>
+        </a>
     </div>
 
     <div id="page-football" class="content">
-        <div class="container justify-content-center">
+        <div id="miniEnquetes" class="container justify-content-center">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
-                    <h2>Mini enquêtes</h2>
-                    <p class="lead">Bienvenue à Crime City, la ville où le crime menace à chaque coin de rue. Secrets macabres, vols sournois et meurtres de sang-froid sont monnaie courante ici. </p>
-                    
+                    <h2>Minis-enquêtes</h2>
+                    <p>Retrouve les scènes et répond aux 42 questions…</p>
                     <!-- Image strip : toutes les images en dur, chaque image dans une div.slide -->
-                    <div id="footballImageStrip" class="image-strip my-4">
+                    <div id="footballImageStrip" class="image-strip">
                         <div class="slide">
                             <img src="../images/enigmes_football/enigme_1.png" alt="Football 1">
                             <p>De quoi parle cette journaliste ?</p>
@@ -201,10 +201,10 @@
                             <p>Mi-canard, mi-donut... Où flotte cette bouée ?</p>
                         </div>
                     </div>
-
-                    <div class="section-nav-button">
+                    <a class="btn btn-block btn-danger btn-lg mx-auto" href="../images/enigmes_football/solution_football.png" role="button" target="_blank">Solution</a>
+                    <a href="#bonusEnquetes" class="section-nav-button position-absolute bottom-0 w-100 text-center">
                         <i class="bi bi-caret-down-fill"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -212,6 +212,7 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
                     <h2>Enquêtes bonus</h2>
+                    <p>Envie de prolonger le match ? Découvre 2 enquêtes bonus !</p>
                     <div id="leoCarousel" class="carousel carousel-dark slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#leoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -357,7 +358,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/loadMenu.js"></script>
+    <!-- <script src="../js/loadMenu.js"></script> -->
     <script src="../js/slider-snap.js"></script>
 </body>
 </html>
