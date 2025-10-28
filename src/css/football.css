@@ -51,6 +51,7 @@ h2 {
     max-width: none !important;
     height: auto;
     display: block;
+    max-height: 35svh;
 }
 
 /* légendes sous les images */
