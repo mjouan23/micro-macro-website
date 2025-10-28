@@ -60,6 +60,7 @@ h2 {
     font-size: 1.2rem;
     color: #333;
     font-weight: 600;
+    margin-bottom: none;
 }
 
 /* petit ajustement esthétique pour que le scroll soit uniquement horizontal */
