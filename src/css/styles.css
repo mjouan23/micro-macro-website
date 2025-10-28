@@ -121,10 +121,9 @@ a {
 
 /* Style commun pour les boutons de navigation entre sections */
 .section-nav-button {
-    bottom: 0;
     width: 100%;
     text-align: center;
-    z-index: 100;
+    line-height: 1em;
 }
 
 .section-nav-button i.bi {
